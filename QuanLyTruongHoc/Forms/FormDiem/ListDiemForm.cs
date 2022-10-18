@@ -15,7 +15,6 @@ namespace QuanLyTruongHoc.Forms.FormDiem
     {
         private System.Windows.Forms.BindingSource diemBindingSource;
         private BindingSource diemBindingSource1;
-        private Button add_btn;
         private System.ComponentModel.IContainer components;
         public ListDiemForm()
         {
@@ -27,17 +26,13 @@ namespace QuanLyTruongHoc.Forms.FormDiem
         {
             this.components = new System.ComponentModel.Container();
             this.diemBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.add_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.diemBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.add_btn);
             this.panel1.Size = new System.Drawing.Size(800, 32);
-            this.panel1.Controls.SetChildIndex(this.search_btn, 0);
-            this.panel1.Controls.SetChildIndex(this.add_btn, 0);
             // 
             // search_btn
             // 
@@ -46,16 +41,6 @@ namespace QuanLyTruongHoc.Forms.FormDiem
             // diemBindingSource1
             // 
             this.diemBindingSource1.DataSource = typeof(QuanLyTruongHoc.DataObjects.Diem);
-            // 
-            // add_btn
-            // 
-            this.add_btn.Location = new System.Drawing.Point(207, -10);
-            this.add_btn.Name = "add_btn";
-            this.add_btn.Size = new System.Drawing.Size(113, 42);
-            this.add_btn.TabIndex = 1;
-            this.add_btn.Text = "Thêm";
-            this.add_btn.UseVisualStyleBackColor = true;
-            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
             // 
             // ListDiemForm
             // 

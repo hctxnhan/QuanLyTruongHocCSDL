@@ -90,9 +90,12 @@
     <Compile Include="Forms\FormGiangVien\ListGiangVienForm.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="Forms\FormGiangVien\ViewGiangVienForm.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> Stashed changes
     <Compile Include="Forms\FormLopHoc\AddLopHocForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +141,7 @@
     <EmbeddedResource Include="Forms\DetailInfoForm.resx">
       <DependentUpon>DetailInfoForm.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< Updated upstream
     <EmbeddedResource Include="Forms\FormDiem\AddDiemForm.resx">
       <DependentUpon>AddDiemForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +160,8 @@
     <EmbeddedResource Include="Forms\FormGiangVien\ViewGiangVienForm.resx">
       <DependentUpon>ViewGiangVienForm.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> Stashed changes
     <EmbeddedResource Include="Forms\FormLopHoc\AddLopHocForm.resx">
       <DependentUpon>AddLopHocForm.cs</DependentUpon>
     </EmbeddedResource>

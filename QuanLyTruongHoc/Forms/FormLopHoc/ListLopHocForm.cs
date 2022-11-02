@@ -117,8 +117,10 @@ namespace QuanLyTruongHoc.Forms.FormLopHoc
 
         protected override void add_btn_Click(object sender, EventArgs e)
         {
-            AddLopHocForm addLopHocForm = new AddLopHocForm();
-            addLopHocForm.Show();
+            ListLopHocForm listLopHocForm = new ListLopHocForm();
+            listLopHocForm.Show();
+            //AddLopHocForm addLopHocForm = new AddLopHocForm();
+            //addLopHocForm.Show();
         }
     }
 }

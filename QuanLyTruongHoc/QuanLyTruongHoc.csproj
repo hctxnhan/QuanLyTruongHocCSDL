@@ -117,6 +117,7 @@
     <Compile Include="Forms\FormKhoa\ViewKhoaForm.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="Forms\FormKyHoc\AddKyHocForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +130,8 @@
     <Compile Include="Forms\FormKyHoc\ViewKyHocForm.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> Stashed changes
     <Compile Include="Forms\FormLopHoc\AddLopHocForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +235,8 @@
     <EmbeddedResource Include="Forms\FormKyHoc\ViewKyHocForm.resx">
       <DependentUpon>ViewKyHocForm.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> Stashed changes
     <EmbeddedResource Include="Forms\FormLopHoc\AddLopHocForm.resx">
       <DependentUpon>AddLopHocForm.cs</DependentUpon>
     </EmbeddedResource>

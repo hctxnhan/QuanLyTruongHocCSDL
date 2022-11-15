@@ -13,11 +13,30 @@ using System.Windows.Forms;
 
 namespace QuanLyTruongHoc.Forms
 {
-    public partial class BaseListForm : Form
+    public partial class BaseListForm<T> : Form
     {
+        protected List<T> list;
+        protected DataTable table;
         public BaseListForm()
         {
             InitializeComponent();
+            list = new List<T>();
+        }
+
+        public void InitList()
+        {
+            table = GetTable();
+            dataGridView.DataSource = table;
+            foreach (DataRow row in table.Rows)
+            {
+                T item = ConverterHelper.ConvertDataRow<T>(row);
+                list.Add(item);
+            }
+        }
+
+        public virtual DataTable GetTable()
+        {
+            return null;
         }
 
         private void BaseListForm_Load(object sender, EventArgs e)
@@ -59,12 +78,38 @@ namespace QuanLyTruongHoc.Forms
 
         protected virtual void search_btn_Click(object sender, EventArgs e)
         {
+            T searchObj = SearchObject();
+            MessageBox.Show(searchObj.ToString());
+            DataTable result;
+            if (searchObj == null)
+            {
+                result = GetTable();
+            }   
+            else
+            {
+                result = Helpers.Search.SearchBy<T>(table, searchObj);
+            }
+            dataGridView.DataSource = result;
+        }
 
+        protected virtual T SearchObject()
+        {
+            return default(T);
         }
 
         protected virtual void add_btn_Click(object sender, EventArgs e)
         {
+           
+        }
 
+        private void iObjectDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void refresh_Click(object sender, EventArgs e)
+        {
+            dataGridView.DataSource = GetTable();
         }
     }
 }

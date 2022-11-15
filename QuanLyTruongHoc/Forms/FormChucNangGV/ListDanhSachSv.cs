@@ -11,17 +11,25 @@ using QuanLyTruongHoc.Helpers.Convert;
 
 namespace QuanLyTruongHoc.Forms.FormChucNangGV
 {
-    internal class ListDanhSachSv : BaseListForm
+    internal class ListDanhSachSv : BaseListForm<SinhVien>
     {
         private BindingSource danhSachLopBindingSource;
         private TextBox textBox1;
         private System.ComponentModel.IContainer components;
+        private ThongTinLopHoc thongTin;
         public ListDanhSachSv(ThongTinLopHoc thongTinLopHoc) : base()
         {
             InitializeComponent();
-            dataGridView.DataSource = MainForm.Manager.GiangVien.GetDanhSachSV(thongTinLopHoc);
+            thongTin = thongTinLopHoc;
+            InitList();
         }
-        
+
+
+        public override DataTable GetTable()
+        {
+            return MainForm.Manager.GiangVien.GetDanhSachSV(thongTin);
+        }
+
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();

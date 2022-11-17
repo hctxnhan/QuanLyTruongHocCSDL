@@ -18,11 +18,11 @@ namespace QuanLyTruongHoc.Forms.FormDiem
     {
         private System.Windows.Forms.BindingSource diemBindingSource;
         private BindingSource diemBindingSource1;
-        private TextBox diem_cuoi_kyTextBox;
-        private TextBox diem_giua_kyTextBox;
-        private TextBox maLopTextBox;
-        private TextBox maSVTextBox;
         private Button button1;
+        private TextBox maSVTextBox;
+        private TextBox maLopTextBox;
+        private TextBox diem_giua_kyTextBox;
+        private TextBox diem_cuoi_kyTextBox;
         private System.ComponentModel.IContainer components;
         public ListDiemForm():base()
         {
@@ -42,12 +42,12 @@ namespace QuanLyTruongHoc.Forms.FormDiem
             System.Windows.Forms.Label diem_giua_kyLabel;
             System.Windows.Forms.Label maLopLabel;
             System.Windows.Forms.Label maSVLabel;
-            this.diem_cuoi_kyTextBox = new System.Windows.Forms.TextBox();
             this.diemBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.diem_giua_kyTextBox = new System.Windows.Forms.TextBox();
-            this.maLopTextBox = new System.Windows.Forms.TextBox();
-            this.maSVTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.maSVTextBox = new System.Windows.Forms.TextBox();
+            this.maLopTextBox = new System.Windows.Forms.TextBox();
+            this.diem_giua_kyTextBox = new System.Windows.Forms.TextBox();
+            this.diem_cuoi_kyTextBox = new System.Windows.Forms.TextBox();
             diem_cuoi_kyLabel = new System.Windows.Forms.Label();
             diem_giua_kyLabel = new System.Windows.Forms.Label();
             maLopLabel = new System.Windows.Forms.Label();
@@ -58,133 +58,172 @@ namespace QuanLyTruongHoc.Forms.FormDiem
             // 
             // search_btn
             // 
-            this.search_btn.Location = new System.Drawing.Point(396, 115);
-            this.search_btn.Size = new System.Drawing.Size(116, 33);
+            this.search_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.search_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_btn.Font = new System.Drawing.Font("Roboto Slab", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_btn.ForeColor = System.Drawing.Color.White;
+            this.search_btn.Location = new System.Drawing.Point(102, 180);
+            this.search_btn.Size = new System.Drawing.Size(110, 33);
+            this.search_btn.UseVisualStyleBackColor = false;
             this.search_btn.Click += new System.EventHandler(this.search_btn_Click_1);
             // 
             // add_btn
             // 
-            this.add_btn.Location = new System.Drawing.Point(271, 115);
-            this.add_btn.Size = new System.Drawing.Size(100, 33);
+            this.add_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.add_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_btn.Font = new System.Drawing.Font("Roboto Slab", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_btn.ForeColor = System.Drawing.Color.White;
+            this.add_btn.Location = new System.Drawing.Point(466, 180);
+            this.add_btn.Size = new System.Drawing.Size(110, 33);
+            this.add_btn.UseVisualStyleBackColor = false;
             this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
             // 
             // refresh
             // 
-            this.refresh.Location = new System.Drawing.Point(527, 115);
+            this.refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refresh.Font = new System.Drawing.Font("Roboto Slab", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh.ForeColor = System.Drawing.Color.White;
+            this.refresh.Location = new System.Drawing.Point(280, 180);
+            this.refresh.Size = new System.Drawing.Size(110, 33);
+            this.refresh.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.maSVTextBox);
+            this.panel1.Controls.Add(this.maLopTextBox);
+            this.panel1.Controls.Add(this.diem_giua_kyTextBox);
+            this.panel1.Controls.Add(this.diem_cuoi_kyTextBox);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(diem_cuoi_kyLabel);
-            this.panel1.Controls.Add(this.diem_cuoi_kyTextBox);
             this.panel1.Controls.Add(diem_giua_kyLabel);
-            this.panel1.Controls.Add(this.diem_giua_kyTextBox);
             this.panel1.Controls.Add(maLopLabel);
-            this.panel1.Controls.Add(this.maLopTextBox);
             this.panel1.Controls.Add(maSVLabel);
-            this.panel1.Controls.Add(this.maSVTextBox);
             this.panel1.Location = new System.Drawing.Point(0, 30);
-            this.panel1.Size = new System.Drawing.Size(808, 182);
+            this.panel1.Size = new System.Drawing.Size(866, 241);
             this.panel1.Controls.SetChildIndex(this.refresh, 0);
             this.panel1.Controls.SetChildIndex(this.search_btn, 0);
             this.panel1.Controls.SetChildIndex(this.add_btn, 0);
-            this.panel1.Controls.SetChildIndex(this.maSVTextBox, 0);
             this.panel1.Controls.SetChildIndex(maSVLabel, 0);
-            this.panel1.Controls.SetChildIndex(this.maLopTextBox, 0);
             this.panel1.Controls.SetChildIndex(maLopLabel, 0);
-            this.panel1.Controls.SetChildIndex(this.diem_giua_kyTextBox, 0);
             this.panel1.Controls.SetChildIndex(diem_giua_kyLabel, 0);
-            this.panel1.Controls.SetChildIndex(this.diem_cuoi_kyTextBox, 0);
             this.panel1.Controls.SetChildIndex(diem_cuoi_kyLabel, 0);
             this.panel1.Controls.SetChildIndex(this.button1, 0);
+            this.panel1.Controls.SetChildIndex(this.diem_cuoi_kyTextBox, 0);
+            this.panel1.Controls.SetChildIndex(this.diem_giua_kyTextBox, 0);
+            this.panel1.Controls.SetChildIndex(this.maLopTextBox, 0);
+            this.panel1.Controls.SetChildIndex(this.maSVTextBox, 0);
             // 
             // diem_cuoi_kyLabel
             // 
             diem_cuoi_kyLabel.AutoSize = true;
-            diem_cuoi_kyLabel.Location = new System.Drawing.Point(53, 41);
+            diem_cuoi_kyLabel.Font = new System.Drawing.Font("Roboto Slab", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            diem_cuoi_kyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            diem_cuoi_kyLabel.Location = new System.Drawing.Point(69, 64);
             diem_cuoi_kyLabel.Name = "diem_cuoi_kyLabel";
-            diem_cuoi_kyLabel.Size = new System.Drawing.Size(92, 17);
+            diem_cuoi_kyLabel.Size = new System.Drawing.Size(116, 23);
             diem_cuoi_kyLabel.TabIndex = 2;
             diem_cuoi_kyLabel.Text = "Điểm cuối kỳ:";
             // 
             // diem_giua_kyLabel
             // 
             diem_giua_kyLabel.AutoSize = true;
-            diem_giua_kyLabel.Location = new System.Drawing.Point(53, 69);
+            diem_giua_kyLabel.Font = new System.Drawing.Font("Roboto Slab", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            diem_giua_kyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            diem_giua_kyLabel.Location = new System.Drawing.Point(67, 100);
             diem_giua_kyLabel.Name = "diem_giua_kyLabel";
-            diem_giua_kyLabel.Size = new System.Drawing.Size(93, 17);
+            diem_giua_kyLabel.Size = new System.Drawing.Size(118, 23);
             diem_giua_kyLabel.TabIndex = 4;
             diem_giua_kyLabel.Text = "Điểm giữa kỳ:";
             // 
             // maLopLabel
             // 
             maLopLabel.AutoSize = true;
-            maLopLabel.Location = new System.Drawing.Point(53, 97);
+            maLopLabel.Font = new System.Drawing.Font("Roboto Slab", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            maLopLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            maLopLabel.Location = new System.Drawing.Point(465, 68);
             maLopLabel.Name = "maLopLabel";
-            maLopLabel.Size = new System.Drawing.Size(81, 17);
+            maLopLabel.Size = new System.Drawing.Size(100, 23);
             maLopLabel.TabIndex = 6;
             maLopLabel.Text = "Mã lớp học:";
             // 
             // maSVLabel
             // 
             maSVLabel.AutoSize = true;
-            maSVLabel.Location = new System.Drawing.Point(53, 125);
+            maSVLabel.Font = new System.Drawing.Font("Roboto Slab", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            maSVLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            maSVLabel.Location = new System.Drawing.Point(447, 103);
             maSVLabel.Name = "maSVLabel";
-            maSVLabel.Size = new System.Drawing.Size(91, 17);
+            maSVLabel.Size = new System.Drawing.Size(116, 23);
             maSVLabel.TabIndex = 8;
             maSVLabel.Text = "Mã sinh viên:";
-            // 
-            // diem_cuoi_kyTextBox
-            // 
-            this.diem_cuoi_kyTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.diemBindingSource1, "diem_cuoi_ky", true));
-            this.diem_cuoi_kyTextBox.Location = new System.Drawing.Point(152, 38);
-            this.diem_cuoi_kyTextBox.Name = "diem_cuoi_kyTextBox";
-            this.diem_cuoi_kyTextBox.Size = new System.Drawing.Size(100, 22);
-            this.diem_cuoi_kyTextBox.TabIndex = 3;
             // 
             // diemBindingSource1
             // 
             this.diemBindingSource1.DataSource = typeof(QuanLyTruongHoc.DataObjects.Diem);
             this.diemBindingSource1.CurrentChanged += new System.EventHandler(this.diemBindingSource1_CurrentChanged);
             // 
-            // diem_giua_kyTextBox
+            // button1
             // 
-            this.diem_giua_kyTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.diemBindingSource1, "diem_giua_ky", true));
-            this.diem_giua_kyTextBox.Location = new System.Drawing.Point(152, 66);
-            this.diem_giua_kyTextBox.Name = "diem_giua_kyTextBox";
-            this.diem_giua_kyTextBox.Size = new System.Drawing.Size(100, 22);
-            this.diem_giua_kyTextBox.TabIndex = 5;
-            // 
-            // maLopTextBox
-            // 
-            this.maLopTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.diemBindingSource1, "maLop", true));
-            this.maLopTextBox.Location = new System.Drawing.Point(152, 94);
-            this.maLopTextBox.Name = "maLopTextBox";
-            this.maLopTextBox.Size = new System.Drawing.Size(100, 22);
-            this.maLopTextBox.TabIndex = 7;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Roboto Slab", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(645, 180);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 33);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Chuyển lớp";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // maSVTextBox
             // 
-            this.maSVTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.diemBindingSource1, "maSV", true));
-            this.maSVTextBox.Location = new System.Drawing.Point(152, 122);
+            this.maSVTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.maSVTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maSVTextBox.Location = new System.Drawing.Point(571, 103);
+            this.maSVTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.maSVTextBox.Name = "maSVTextBox";
-            this.maSVTextBox.Size = new System.Drawing.Size(100, 22);
-            this.maSVTextBox.TabIndex = 9;
+            this.maSVTextBox.Size = new System.Drawing.Size(227, 32);
+            this.maSVTextBox.TabIndex = 12;
             // 
-            // button1
+            // maLopTextBox
             // 
-            this.button1.Location = new System.Drawing.Point(617, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 33);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Chuyển lớp";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.maLopTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.maLopTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maLopTextBox.Location = new System.Drawing.Point(571, 64);
+            this.maLopTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.maLopTextBox.Name = "maLopTextBox";
+            this.maLopTextBox.Size = new System.Drawing.Size(227, 32);
+            this.maLopTextBox.TabIndex = 13;
+            // 
+            // diem_giua_kyTextBox
+            // 
+            this.diem_giua_kyTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.diem_giua_kyTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diem_giua_kyTextBox.Location = new System.Drawing.Point(191, 96);
+            this.diem_giua_kyTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.diem_giua_kyTextBox.Name = "diem_giua_kyTextBox";
+            this.diem_giua_kyTextBox.Size = new System.Drawing.Size(227, 32);
+            this.diem_giua_kyTextBox.TabIndex = 14;
+            // 
+            // diem_cuoi_kyTextBox
+            // 
+            this.diem_cuoi_kyTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.diem_cuoi_kyTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diem_cuoi_kyTextBox.Location = new System.Drawing.Point(191, 60);
+            this.diem_cuoi_kyTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.diem_cuoi_kyTextBox.Name = "diem_cuoi_kyTextBox";
+            this.diem_cuoi_kyTextBox.Size = new System.Drawing.Size(227, 32);
+            this.diem_cuoi_kyTextBox.TabIndex = 11;
             // 
             // ListDiemForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.ClientSize = new System.Drawing.Size(808, 694);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(866, 694);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ListDiemForm";
             this.Controls.SetChildIndex(this.panel1, 0);
             this.panel1.ResumeLayout(false);

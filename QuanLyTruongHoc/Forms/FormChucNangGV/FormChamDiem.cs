@@ -18,6 +18,7 @@ namespace QuanLyTruongHoc.Forms.FormChucNangGV
         private TextBox maLopTextBox;
         private TextBox maSVTextBox;
         private TextBox tenTextBox;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Button update_btn;
 
         public FormChamDiem() : base()
@@ -52,6 +53,7 @@ namespace QuanLyTruongHoc.Forms.FormChucNangGV
             this.maLopTextBox = new System.Windows.Forms.TextBox();
             this.maSVTextBox = new System.Windows.Forms.TextBox();
             this.tenTextBox = new System.Windows.Forms.TextBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             diemCKLabel = new System.Windows.Forms.Label();
             diemGKLabel = new System.Windows.Forms.Label();
             hoLabel = new System.Windows.Forms.Label();
@@ -63,8 +65,14 @@ namespace QuanLyTruongHoc.Forms.FormChucNangGV
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
+            // bindingSource
+            // 
+            this.bindingSource.CurrentChanged += new System.EventHandler(this.bindingSource_CurrentChanged);
+            // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.guna2ControlBox1);
             this.panel1.Controls.Add(diemCKLabel);
             this.panel1.Controls.Add(this.diemCKTextBox);
             this.panel1.Controls.Add(diemGKLabel);
@@ -77,155 +85,189 @@ namespace QuanLyTruongHoc.Forms.FormChucNangGV
             this.panel1.Controls.Add(this.maSVTextBox);
             this.panel1.Controls.Add(tenLabel);
             this.panel1.Controls.Add(this.tenTextBox);
-            this.panel1.Size = new System.Drawing.Size(816, 608);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Size = new System.Drawing.Size(725, 441);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.update_btn);
-            this.panel2.Location = new System.Drawing.Point(0, 608);
-            this.panel2.Size = new System.Drawing.Size(816, 162);
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.Location = new System.Drawing.Point(0, 441);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Size = new System.Drawing.Size(725, 175);
             this.panel2.Controls.SetChildIndex(this.update_btn, 0);
             // 
             // diemCKLabel
             // 
             diemCKLabel.AutoSize = true;
-            diemCKLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            diemCKLabel.Location = new System.Drawing.Point(104, 479);
+            diemCKLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            diemCKLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            diemCKLabel.Location = new System.Drawing.Point(84, 344);
             diemCKLabel.Name = "diemCKLabel";
-            diemCKLabel.Size = new System.Drawing.Size(168, 30);
+            diemCKLabel.Size = new System.Drawing.Size(134, 26);
             diemCKLabel.TabIndex = 0;
             diemCKLabel.Text = "Điểm cuối kỳ:";
             // 
             // diemGKLabel
             // 
             diemGKLabel.AutoSize = true;
-            diemGKLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            diemGKLabel.Location = new System.Drawing.Point(104, 405);
+            diemGKLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            diemGKLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            diemGKLabel.Location = new System.Drawing.Point(84, 290);
             diemGKLabel.Name = "diemGKLabel";
-            diemGKLabel.Size = new System.Drawing.Size(169, 30);
+            diemGKLabel.Size = new System.Drawing.Size(136, 26);
             diemGKLabel.TabIndex = 2;
             diemGKLabel.Text = "Điểm giữa kỳ:";
             // 
             // hoLabel
             // 
             hoLabel.AutoSize = true;
-            hoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            hoLabel.Location = new System.Drawing.Point(104, 244);
+            hoLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            hoLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            hoLabel.Location = new System.Drawing.Point(176, 174);
             hoLabel.Name = "hoLabel";
-            hoLabel.Size = new System.Drawing.Size(53, 30);
+            hoLabel.Size = new System.Drawing.Size(41, 26);
             hoLabel.TabIndex = 4;
             hoLabel.Text = "Họ:";
             // 
             // maLopLabel
             // 
             maLopLabel.AutoSize = true;
-            maLopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            maLopLabel.Location = new System.Drawing.Point(104, 90);
+            maLopLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            maLopLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            maLopLabel.Location = new System.Drawing.Point(139, 70);
             maLopLabel.Name = "maLopLabel";
-            maLopLabel.Size = new System.Drawing.Size(97, 30);
+            maLopLabel.Size = new System.Drawing.Size(78, 26);
             maLopLabel.TabIndex = 6;
             maLopLabel.Text = "Mã lớp:";
             // 
             // maSVLabel
             // 
             maSVLabel.AutoSize = true;
-            maSVLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            maSVLabel.Location = new System.Drawing.Point(104, 174);
+            maSVLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            maSVLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            maSVLabel.Location = new System.Drawing.Point(84, 126);
             maSVLabel.Name = "maSVLabel";
-            maSVLabel.Size = new System.Drawing.Size(164, 30);
+            maSVLabel.Size = new System.Drawing.Size(133, 26);
             maSVLabel.TabIndex = 8;
             maSVLabel.Text = "Mã sinh viên:";
             // 
             // tenLabel
             // 
             tenLabel.AutoSize = true;
-            tenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tenLabel.Location = new System.Drawing.Point(104, 326);
+            tenLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tenLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            tenLabel.Location = new System.Drawing.Point(167, 230);
             tenLabel.Name = "tenLabel";
-            tenLabel.Size = new System.Drawing.Size(64, 30);
+            tenLabel.Size = new System.Drawing.Size(50, 26);
             tenLabel.TabIndex = 10;
             tenLabel.Text = "Tên:";
             // 
             // update_btn
             // 
-            this.update_btn.Location = new System.Drawing.Point(237, 20);
+            this.update_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.update_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.update_btn.Font = new System.Drawing.Font("Roboto Slab", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_btn.ForeColor = System.Drawing.Color.White;
+            this.update_btn.Location = new System.Drawing.Point(557, 16);
+            this.update_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.update_btn.Name = "update_btn";
-            this.update_btn.Size = new System.Drawing.Size(100, 37);
+            this.update_btn.Size = new System.Drawing.Size(135, 39);
             this.update_btn.TabIndex = 1;
             this.update_btn.Text = "Cập nhật";
-            this.update_btn.UseVisualStyleBackColor = true;
+            this.update_btn.UseVisualStyleBackColor = false;
             this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
             // 
             // diemCKTextBox
             // 
+            this.diemCKTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
             this.diemCKTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "diemCK", true));
             this.diemCKTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diemCKTextBox.Location = new System.Drawing.Point(293, 479);
+            this.diemCKTextBox.Location = new System.Drawing.Point(225, 344);
+            this.diemCKTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.diemCKTextBox.Name = "diemCKTextBox";
-            this.diemCKTextBox.Size = new System.Drawing.Size(437, 37);
+            this.diemCKTextBox.Size = new System.Drawing.Size(389, 32);
             this.diemCKTextBox.TabIndex = 1;
             // 
             // diemGKTextBox
             // 
+            this.diemGKTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
             this.diemGKTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "diemGK", true));
             this.diemGKTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diemGKTextBox.Location = new System.Drawing.Point(293, 405);
+            this.diemGKTextBox.Location = new System.Drawing.Point(225, 288);
+            this.diemGKTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.diemGKTextBox.Name = "diemGKTextBox";
-            this.diemGKTextBox.Size = new System.Drawing.Size(437, 37);
+            this.diemGKTextBox.Size = new System.Drawing.Size(389, 32);
             this.diemGKTextBox.TabIndex = 3;
             // 
             // hoTextBox
             // 
+            this.hoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
             this.hoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "Ho", true));
             this.hoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hoTextBox.Location = new System.Drawing.Point(293, 244);
+            this.hoTextBox.Location = new System.Drawing.Point(225, 174);
+            this.hoTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hoTextBox.Name = "hoTextBox";
-            this.hoTextBox.Size = new System.Drawing.Size(437, 37);
+            this.hoTextBox.Size = new System.Drawing.Size(389, 32);
             this.hoTextBox.TabIndex = 5;
             // 
             // maLopTextBox
             // 
+            this.maLopTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
             this.maLopTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "maLop", true));
             this.maLopTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maLopTextBox.Location = new System.Drawing.Point(293, 87);
+            this.maLopTextBox.Location = new System.Drawing.Point(225, 70);
+            this.maLopTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.maLopTextBox.Name = "maLopTextBox";
-            this.maLopTextBox.Size = new System.Drawing.Size(437, 37);
+            this.maLopTextBox.Size = new System.Drawing.Size(389, 32);
             this.maLopTextBox.TabIndex = 7;
             // 
             // maSVTextBox
             // 
+            this.maSVTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
             this.maSVTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "maSV", true));
             this.maSVTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maSVTextBox.Location = new System.Drawing.Point(293, 167);
+            this.maSVTextBox.Location = new System.Drawing.Point(225, 120);
+            this.maSVTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.maSVTextBox.Name = "maSVTextBox";
-            this.maSVTextBox.Size = new System.Drawing.Size(437, 37);
+            this.maSVTextBox.Size = new System.Drawing.Size(389, 32);
             this.maSVTextBox.TabIndex = 9;
             // 
             // tenTextBox
             // 
+            this.tenTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
             this.tenTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "Ten", true));
             this.tenTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenTextBox.Location = new System.Drawing.Point(293, 323);
+            this.tenTextBox.Location = new System.Drawing.Point(225, 230);
+            this.tenTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tenTextBox.Name = "tenTextBox";
-            this.tenTextBox.Size = new System.Drawing.Size(437, 37);
+            this.tenTextBox.Size = new System.Drawing.Size(389, 32);
             this.tenTextBox.TabIndex = 11;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(680, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 12;
             // 
             // FormChamDiem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.ClientSize = new System.Drawing.Size(816, 770);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ClientSize = new System.Drawing.Size(725, 616);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormChamDiem";
+            this.Text = "`";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
@@ -255,6 +297,11 @@ namespace QuanLyTruongHoc.Forms.FormChucNangGV
             {
                 MessageBox.Show("Cập nhật thất bại");
             }
+        }
+
+        private void bindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

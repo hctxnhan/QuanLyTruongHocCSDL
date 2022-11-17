@@ -54,6 +54,7 @@ namespace QuanLyTruongHoc.Forms.FormKyHoc
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(hocPhiLabel);
             this.panel1.Controls.Add(this.hocPhiTextBox);
             this.panel1.Controls.Add(kyHocLabel);
@@ -62,105 +63,131 @@ namespace QuanLyTruongHoc.Forms.FormKyHoc
             this.panel1.Controls.Add(this.maKyHocTextBox);
             this.panel1.Controls.Add(namHocLabel);
             this.panel1.Controls.Add(this.namHocTextBox);
-            this.panel1.Size = new System.Drawing.Size(816, 580);
+            this.panel1.Font = new System.Drawing.Font("Roboto Slab", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Size = new System.Drawing.Size(725, 344);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.add_button);
-            this.panel2.Location = new System.Drawing.Point(0, 580);
-            this.panel2.Size = new System.Drawing.Size(816, 164);
+            this.panel2.Location = new System.Drawing.Point(0, 344);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Size = new System.Drawing.Size(725, 251);
             this.panel2.Controls.SetChildIndex(this.add_button, 0);
             // 
             // hocPhiLabel
             // 
             hocPhiLabel.AutoSize = true;
-            hocPhiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            hocPhiLabel.Location = new System.Drawing.Point(94, 163);
+            hocPhiLabel.BackColor = System.Drawing.Color.White;
+            hocPhiLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            hocPhiLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            hocPhiLabel.Location = new System.Drawing.Point(114, 130);
             hocPhiLabel.Name = "hocPhiLabel";
-            hocPhiLabel.Size = new System.Drawing.Size(110, 30);
+            hocPhiLabel.Size = new System.Drawing.Size(86, 26);
             hocPhiLabel.TabIndex = 0;
             hocPhiLabel.Text = "Học Phí:";
             // 
             // kyHocLabel
             // 
             kyHocLabel.AutoSize = true;
-            kyHocLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            kyHocLabel.Location = new System.Drawing.Point(94, 217);
+            kyHocLabel.BackColor = System.Drawing.Color.White;
+            kyHocLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            kyHocLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            kyHocLabel.Location = new System.Drawing.Point(119, 175);
             kyHocLabel.Name = "kyHocLabel";
-            kyHocLabel.Size = new System.Drawing.Size(103, 30);
+            kyHocLabel.Size = new System.Drawing.Size(81, 26);
             kyHocLabel.TabIndex = 2;
             kyHocLabel.Text = "Kỳ Học:";
             // 
             // maKyHocLabel
             // 
             maKyHocLabel.AutoSize = true;
-            maKyHocLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            maKyHocLabel.Location = new System.Drawing.Point(94, 275);
+            maKyHocLabel.BackColor = System.Drawing.Color.White;
+            maKyHocLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            maKyHocLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            maKyHocLabel.Location = new System.Drawing.Point(85, 222);
             maKyHocLabel.Name = "maKyHocLabel";
-            maKyHocLabel.Size = new System.Drawing.Size(146, 30);
+            maKyHocLabel.Size = new System.Drawing.Size(115, 26);
             maKyHocLabel.TabIndex = 4;
             maKyHocLabel.Text = "Mã Kỳ Học:";
             // 
             // namHocLabel
             // 
             namHocLabel.AutoSize = true;
-            namHocLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            namHocLabel.Location = new System.Drawing.Point(94, 331);
+            namHocLabel.BackColor = System.Drawing.Color.White;
+            namHocLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            namHocLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            namHocLabel.Location = new System.Drawing.Point(100, 265);
             namHocLabel.Name = "namHocLabel";
-            namHocLabel.Size = new System.Drawing.Size(128, 30);
+            namHocLabel.Size = new System.Drawing.Size(100, 26);
             namHocLabel.TabIndex = 6;
             namHocLabel.Text = "Năm Học:";
             // 
             // hocPhiTextBox
             // 
+            this.hocPhiTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
             this.hocPhiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "HocPhi", true));
             this.hocPhiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hocPhiTextBox.Location = new System.Drawing.Point(269, 160);
+            this.hocPhiTextBox.Location = new System.Drawing.Point(216, 130);
+            this.hocPhiTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hocPhiTextBox.Name = "hocPhiTextBox";
-            this.hocPhiTextBox.Size = new System.Drawing.Size(446, 37);
+            this.hocPhiTextBox.Size = new System.Drawing.Size(397, 32);
             this.hocPhiTextBox.TabIndex = 1;
             // 
             // kyHocTextBox
             // 
+            this.kyHocTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
             this.kyHocTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "kyHoc", true));
             this.kyHocTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kyHocTextBox.Location = new System.Drawing.Point(269, 214);
+            this.kyHocTextBox.Location = new System.Drawing.Point(216, 173);
+            this.kyHocTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kyHocTextBox.Name = "kyHocTextBox";
-            this.kyHocTextBox.Size = new System.Drawing.Size(446, 37);
+            this.kyHocTextBox.Size = new System.Drawing.Size(397, 32);
             this.kyHocTextBox.TabIndex = 3;
             // 
             // maKyHocTextBox
             // 
+            this.maKyHocTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
             this.maKyHocTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "MaKyHoc", true));
             this.maKyHocTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maKyHocTextBox.Location = new System.Drawing.Point(269, 272);
+            this.maKyHocTextBox.Location = new System.Drawing.Point(216, 220);
+            this.maKyHocTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.maKyHocTextBox.Name = "maKyHocTextBox";
-            this.maKyHocTextBox.Size = new System.Drawing.Size(446, 37);
+            this.maKyHocTextBox.Size = new System.Drawing.Size(397, 32);
             this.maKyHocTextBox.TabIndex = 5;
             // 
             // namHocTextBox
             // 
+            this.namHocTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
             this.namHocTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "NamHoc", true));
             this.namHocTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namHocTextBox.Location = new System.Drawing.Point(269, 328);
+            this.namHocTextBox.Location = new System.Drawing.Point(216, 264);
+            this.namHocTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.namHocTextBox.Name = "namHocTextBox";
-            this.namHocTextBox.Size = new System.Drawing.Size(446, 37);
+            this.namHocTextBox.Size = new System.Drawing.Size(397, 32);
             this.namHocTextBox.TabIndex = 7;
             // 
             // add_button
             // 
-            this.add_button.Location = new System.Drawing.Point(254, 20);
+            this.add_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.add_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_button.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_button.ForeColor = System.Drawing.Color.White;
+            this.add_button.Location = new System.Drawing.Point(260, 16);
+            this.add_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.add_button.Name = "add_button";
-            this.add_button.Size = new System.Drawing.Size(93, 31);
+            this.add_button.Size = new System.Drawing.Size(130, 33);
             this.add_button.TabIndex = 1;
             this.add_button.Text = "Thêm";
-            this.add_button.UseVisualStyleBackColor = true;
+            this.add_button.UseVisualStyleBackColor = false;
             this.add_button.Click += new System.EventHandler(this.add_button_Click);
             // 
             // AddKyHocForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.ClientSize = new System.Drawing.Size(816, 744);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ClientSize = new System.Drawing.Size(725, 595);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddKyHocForm";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
             this.panel1.ResumeLayout(false);

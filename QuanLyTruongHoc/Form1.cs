@@ -38,7 +38,8 @@ namespace QuanLyTruongHoc
 
         //string connectionString = @"Data Source=DESKTOP-7IT3958;Initial Catalog=QUANLYTRUONGHOC;Integrated Security=True";
         //string connectionString = @"Data Source=.\SQLEXPRESS01;Initial Catalog=QUANLYTRUONGHOC;Integrated Security=True";
-        string connectionString = @"Data Source=DESKTOP-7CJHVGV\SQLEXPRESS;Initial Catalog=QUANLYTRUONGHOC;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        // string connectionString = @"Data Source=DESKTOP-7CJHVGV\SQLEXPRESS;Initial Catalog=QUANLYTRUONGHOC;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string connectionString = @"Data Source=DESKTOP-S151P30\SQLEXPRESS;Initial Catalog=QUANLYTRUONGHOC;Integrated Security=True";
 
         public MainForm()
         {

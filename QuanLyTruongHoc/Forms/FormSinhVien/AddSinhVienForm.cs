@@ -12,6 +12,7 @@ namespace QuanLyTruongHoc.Forms.FormSinhVien
 {
     internal class AddSinhVienForm : ViewSinhVienForm
     {
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         protected System.Windows.Forms.Button add_button;
         
         public AddSinhVienForm(SinhVien sv) : base(sv)
@@ -29,6 +30,7 @@ namespace QuanLyTruongHoc.Forms.FormSinhVien
         private void InitializeComponent()
         {
             this.add_button = new System.Windows.Forms.Button();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -36,43 +38,46 @@ namespace QuanLyTruongHoc.Forms.FormSinhVien
             // 
             // diaChiTextBox
             // 
-            this.diaChiTextBox.Location = new System.Drawing.Point(255, 511);
+            this.diaChiTextBox.Location = new System.Drawing.Point(266, 497);
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(255, 372);
+            this.emailTextBox.Location = new System.Drawing.Point(266, 358);
             // 
             // gioiTinhTextBox
             // 
-            this.gioiTinhTextBox.Location = new System.Drawing.Point(255, 274);
+            this.gioiTinhTextBox.Location = new System.Drawing.Point(266, 260);
             // 
             // hoTextBox
             // 
-            this.hoTextBox.Location = new System.Drawing.Point(255, 227);
+            this.hoTextBox.Location = new System.Drawing.Point(266, 213);
             // 
             // maKhoaComboBox
             // 
-            this.maKhoaComboBox.Location = new System.Drawing.Point(255, 420);
+            this.maKhoaComboBox.Location = new System.Drawing.Point(266, 406);
             // 
             // maSVTextBox
             // 
-            this.maSVTextBox.Location = new System.Drawing.Point(255, 145);
+            this.maSVTextBox.Location = new System.Drawing.Point(266, 131);
             // 
             // ngaySinhDateTimePicker
             // 
-            this.ngaySinhDateTimePicker.Location = new System.Drawing.Point(255, 466);
+            this.ngaySinhDateTimePicker.Location = new System.Drawing.Point(266, 452);
             // 
             // tenTextBox
             // 
-            this.tenTextBox.Location = new System.Drawing.Point(255, 186);
+            this.tenTextBox.Location = new System.Drawing.Point(266, 172);
             // 
             // tinhTrangComboBox
             // 
-            this.tinhTrangComboBox.Location = new System.Drawing.Point(255, 322);
+            this.tinhTrangComboBox.Location = new System.Drawing.Point(266, 308);
             // 
             // panel1
             // 
-            this.panel1.Size = new System.Drawing.Size(615, 637);
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.guna2ControlBox1);
+            this.panel1.Font = new System.Drawing.Font("Roboto Slab", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Size = new System.Drawing.Size(615, 584);
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.Controls.SetChildIndex(this.tinhTrangComboBox, 0);
             this.panel1.Controls.SetChildIndex(this.tenTextBox, 0);
@@ -83,11 +88,13 @@ namespace QuanLyTruongHoc.Forms.FormSinhVien
             this.panel1.Controls.SetChildIndex(this.gioiTinhTextBox, 0);
             this.panel1.Controls.SetChildIndex(this.emailTextBox, 0);
             this.panel1.Controls.SetChildIndex(this.diaChiTextBox, 0);
+            this.panel1.Controls.SetChildIndex(this.guna2ControlBox1, 0);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.add_button);
-            this.panel2.Size = new System.Drawing.Size(615, 51);
+            this.panel2.Location = new System.Drawing.Point(0, 584);
+            this.panel2.Size = new System.Drawing.Size(615, 104);
             this.panel2.Controls.SetChildIndex(this.add_button, 0);
             // 
             // add_button
@@ -100,10 +107,23 @@ namespace QuanLyTruongHoc.Forms.FormSinhVien
             this.add_button.UseVisualStyleBackColor = true;
             this.add_button.Click += new System.EventHandler(this.add_button_Click);
             // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(568, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 18;
+            // 
             // AddSinhVienForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.ClientSize = new System.Drawing.Size(615, 688);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddSinhVienForm";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
             this.panel1.ResumeLayout(false);

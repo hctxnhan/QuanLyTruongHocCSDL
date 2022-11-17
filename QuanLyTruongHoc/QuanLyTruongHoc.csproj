@@ -34,9 +34,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\..\Downloads\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -273,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormGiangVien\ListGiangVienForm.resx">
       <DependentUpon>ListGiangVienForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormGiangVien\ListGVForm.resx">
+      <DependentUpon>ListGVForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormGiangVien\ViewGiangVienForm.resx">
       <DependentUpon>ViewGiangVienForm.cs</DependentUpon>

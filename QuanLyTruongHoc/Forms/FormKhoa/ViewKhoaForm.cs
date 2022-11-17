@@ -10,11 +10,11 @@ namespace QuanLyTruongHoc.Forms.FormKhoa
 {
     internal class ViewKhoaForm : DetailInfoForm<Khoa>
     {
-        private System.Windows.Forms.CheckBox daXoaCheckBox;
-        private System.Windows.Forms.TextBox maKhoaTextBox;
         private System.Windows.Forms.TextBox tenKhoaTextBox;
+        private System.Windows.Forms.CheckBox daXoaCheckBox;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.TextBox maKhoaTextBox;
 
-        
         public ViewKhoaForm() : base()
         {
             InitializeComponent();
@@ -34,13 +34,14 @@ namespace QuanLyTruongHoc.Forms.FormKhoa
         }
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label daXoaLabel;
+            System.Windows.Forms.Label label1;
             System.Windows.Forms.Label maKhoaLabel;
             System.Windows.Forms.Label tenKhoaLabel;
+            this.tenKhoaTextBox = new System.Windows.Forms.TextBox();
             this.daXoaCheckBox = new System.Windows.Forms.CheckBox();
             this.maKhoaTextBox = new System.Windows.Forms.TextBox();
-            this.tenKhoaTextBox = new System.Windows.Forms.TextBox();
-            daXoaLabel = new System.Windows.Forms.Label();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            label1 = new System.Windows.Forms.Label();
             maKhoaLabel = new System.Windows.Forms.Label();
             tenKhoaLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
@@ -49,76 +50,100 @@ namespace QuanLyTruongHoc.Forms.FormKhoa
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(daXoaLabel);
-            this.panel1.Controls.Add(this.daXoaCheckBox);
-            this.panel1.Controls.Add(maKhoaLabel);
-            this.panel1.Controls.Add(this.maKhoaTextBox);
-            this.panel1.Controls.Add(tenKhoaLabel);
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.guna2ControlBox1);
             this.panel1.Controls.Add(this.tenKhoaTextBox);
-            this.panel1.Size = new System.Drawing.Size(816, 493);
+            this.panel1.Controls.Add(label1);
+            this.panel1.Controls.Add(this.daXoaCheckBox);
+            this.panel1.Controls.Add(this.maKhoaTextBox);
+            this.panel1.Controls.Add(maKhoaLabel);
+            this.panel1.Controls.Add(tenKhoaLabel);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Size = new System.Drawing.Size(725, 250);
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(0, 493);
-            this.panel2.Size = new System.Drawing.Size(816, 101);
+            this.panel2.Location = new System.Drawing.Point(0, 250);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Size = new System.Drawing.Size(725, 225);
             // 
-            // daXoaLabel
+            // tenKhoaTextBox
             // 
-            daXoaLabel.AutoSize = true;
-            daXoaLabel.Location = new System.Drawing.Point(57, 240);
-            daXoaLabel.Name = "daXoaLabel";
-            daXoaLabel.Size = new System.Drawing.Size(67, 20);
-            daXoaLabel.TabIndex = 0;
-            daXoaLabel.Text = "Đã Xóa:";
+            this.tenKhoaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.tenKhoaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenKhoaTextBox.Location = new System.Drawing.Point(264, 142);
+            this.tenKhoaTextBox.Name = "tenKhoaTextBox";
+            this.tenKhoaTextBox.Size = new System.Drawing.Size(291, 32);
+            this.tenKhoaTextBox.TabIndex = 31;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            label1.Location = new System.Drawing.Point(446, 105);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(79, 26);
+            label1.TabIndex = 29;
+            label1.Text = "Đã Xóa:";
+            // 
+            // daXoaCheckBox
+            // 
+            this.daXoaCheckBox.Location = new System.Drawing.Point(531, 108);
+            this.daXoaCheckBox.Name = "daXoaCheckBox";
+            this.daXoaCheckBox.Size = new System.Drawing.Size(18, 24);
+            this.daXoaCheckBox.TabIndex = 30;
+            this.daXoaCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // maKhoaTextBox
+            // 
+            this.maKhoaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.maKhoaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maKhoaTextBox.Location = new System.Drawing.Point(264, 99);
+            this.maKhoaTextBox.Name = "maKhoaTextBox";
+            this.maKhoaTextBox.Size = new System.Drawing.Size(176, 32);
+            this.maKhoaTextBox.TabIndex = 28;
             // 
             // maKhoaLabel
             // 
             maKhoaLabel.AutoSize = true;
-            maKhoaLabel.Location = new System.Drawing.Point(57, 269);
+            maKhoaLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            maKhoaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            maKhoaLabel.Location = new System.Drawing.Point(152, 99);
             maKhoaLabel.Name = "maKhoaLabel";
-            maKhoaLabel.Size = new System.Drawing.Size(76, 20);
-            maKhoaLabel.TabIndex = 2;
+            maKhoaLabel.Size = new System.Drawing.Size(97, 26);
+            maKhoaLabel.TabIndex = 26;
             maKhoaLabel.Text = "Mã Khoa:";
             // 
             // tenKhoaLabel
             // 
             tenKhoaLabel.AutoSize = true;
-            tenKhoaLabel.Location = new System.Drawing.Point(57, 304);
+            tenKhoaLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tenKhoaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            tenKhoaLabel.Location = new System.Drawing.Point(147, 142);
             tenKhoaLabel.Name = "tenKhoaLabel";
-            tenKhoaLabel.Size = new System.Drawing.Size(81, 20);
-            tenKhoaLabel.TabIndex = 4;
+            tenKhoaLabel.Size = new System.Drawing.Size(102, 26);
+            tenKhoaLabel.TabIndex = 27;
             tenKhoaLabel.Text = "Tên Khoa:";
             // 
-            // daXoaCheckBox
+            // guna2ControlBox1
             // 
-            this.daXoaCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.bindingSource, "DaXoa", true));
-            this.daXoaCheckBox.Location = new System.Drawing.Point(144, 231);
-            this.daXoaCheckBox.Name = "daXoaCheckBox";
-            this.daXoaCheckBox.Size = new System.Drawing.Size(310, 28);
-            this.daXoaCheckBox.TabIndex = 1;
-            this.daXoaCheckBox.Text = "checkBox1";
-            this.daXoaCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // maKhoaTextBox
-            // 
-            this.maKhoaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "MaKhoa", true));
-            this.maKhoaTextBox.Location = new System.Drawing.Point(144, 266);
-            this.maKhoaTextBox.Name = "maKhoaTextBox";
-            this.maKhoaTextBox.Size = new System.Drawing.Size(310, 26);
-            this.maKhoaTextBox.TabIndex = 3;
-            // 
-            // tenKhoaTextBox
-            // 
-            this.tenKhoaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "TenKhoa", true));
-            this.tenKhoaTextBox.Location = new System.Drawing.Point(144, 298);
-            this.tenKhoaTextBox.Name = "tenKhoaTextBox";
-            this.tenKhoaTextBox.Size = new System.Drawing.Size(310, 26);
-            this.tenKhoaTextBox.TabIndex = 5;
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(680, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 32;
             // 
             // ViewKhoaForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.ClientSize = new System.Drawing.Size(816, 594);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ClientSize = new System.Drawing.Size(725, 475);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ViewKhoaForm";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
             this.panel1.ResumeLayout(false);

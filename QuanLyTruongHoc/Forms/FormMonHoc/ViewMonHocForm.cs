@@ -12,10 +12,11 @@ namespace QuanLyTruongHoc.Forms.FormMonHoc
 {
     internal class ViewMonHocForm : DetailInfoForm<MonHoc>
     {
-        private System.Windows.Forms.TextBox maMonHocTextBox;
-        private System.Windows.Forms.TextBox soTinhChiTextBox;
-        private System.Windows.Forms.TextBox tenMonHocTextBox;
         private System.Windows.Forms.Button update_button;
+        private TextBox maMonHocTextBox;
+        private TextBox soTinhChiTextBox;
+        private TextBox tenMonHocTextBox;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.CheckBox tinhTrangCheckBox;
 
         public ViewMonHocForm(MonHoc mh) : base()
@@ -45,11 +46,12 @@ namespace QuanLyTruongHoc.Forms.FormMonHoc
             System.Windows.Forms.Label soTinhChiLabel;
             System.Windows.Forms.Label tenMonHocLabel;
             System.Windows.Forms.Label tinhTrangLabel;
+            this.tinhTrangCheckBox = new System.Windows.Forms.CheckBox();
+            this.update_button = new System.Windows.Forms.Button();
             this.maMonHocTextBox = new System.Windows.Forms.TextBox();
             this.soTinhChiTextBox = new System.Windows.Forms.TextBox();
             this.tenMonHocTextBox = new System.Windows.Forms.TextBox();
-            this.tinhTrangCheckBox = new System.Windows.Forms.CheckBox();
-            this.update_button = new System.Windows.Forms.Button();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             maMonHocLabel = new System.Windows.Forms.Label();
             soTinhChiLabel = new System.Windows.Forms.Label();
             tenMonHocLabel = new System.Windows.Forms.Label();
@@ -60,100 +62,138 @@ namespace QuanLyTruongHoc.Forms.FormMonHoc
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.guna2ControlBox1);
+            this.panel1.Controls.Add(this.tenMonHocTextBox);
+            this.panel1.Controls.Add(this.soTinhChiTextBox);
+            this.panel1.Controls.Add(this.maMonHocTextBox);
             this.panel1.Controls.Add(this.update_button);
             this.panel1.Controls.Add(maMonHocLabel);
-            this.panel1.Controls.Add(this.maMonHocTextBox);
             this.panel1.Controls.Add(soTinhChiLabel);
-            this.panel1.Controls.Add(this.soTinhChiTextBox);
             this.panel1.Controls.Add(tenMonHocLabel);
-            this.panel1.Controls.Add(this.tenMonHocTextBox);
             this.panel1.Controls.Add(tinhTrangLabel);
             this.panel1.Controls.Add(this.tinhTrangCheckBox);
+            this.panel1.Size = new System.Drawing.Size(725, 293);
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(0, 293);
+            this.panel2.Size = new System.Drawing.Size(725, 395);
             // 
             // maMonHocLabel
             // 
             maMonHocLabel.AutoSize = true;
-            maMonHocLabel.Location = new System.Drawing.Point(230, 159);
+            maMonHocLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            maMonHocLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            maMonHocLabel.Location = new System.Drawing.Point(107, 96);
             maMonHocLabel.Name = "maMonHocLabel";
-            maMonHocLabel.Size = new System.Drawing.Size(89, 17);
+            maMonHocLabel.Size = new System.Drawing.Size(127, 26);
             maMonHocLabel.TabIndex = 0;
             maMonHocLabel.Text = "Mã môn học:";
             // 
             // soTinhChiLabel
             // 
             soTinhChiLabel.AutoSize = true;
-            soTinhChiLabel.Location = new System.Drawing.Point(230, 187);
+            soTinhChiLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            soTinhChiLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            soTinhChiLabel.Location = new System.Drawing.Point(134, 132);
             soTinhChiLabel.Name = "soTinhChiLabel";
-            soTinhChiLabel.Size = new System.Drawing.Size(70, 17);
+            soTinhChiLabel.Size = new System.Drawing.Size(100, 26);
             soTinhChiLabel.TabIndex = 2;
             soTinhChiLabel.Text = "Số tín chỉ:";
             // 
             // tenMonHocLabel
             // 
             tenMonHocLabel.AutoSize = true;
-            tenMonHocLabel.Location = new System.Drawing.Point(230, 215);
+            tenMonHocLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tenMonHocLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            tenMonHocLabel.Location = new System.Drawing.Point(102, 168);
             tenMonHocLabel.Name = "tenMonHocLabel";
-            tenMonHocLabel.Size = new System.Drawing.Size(95, 17);
+            tenMonHocLabel.Size = new System.Drawing.Size(132, 26);
             tenMonHocLabel.TabIndex = 4;
             tenMonHocLabel.Text = "Tên môn học:";
             // 
             // tinhTrangLabel
             // 
             tinhTrangLabel.AutoSize = true;
-            tinhTrangLabel.Location = new System.Drawing.Point(230, 245);
+            tinhTrangLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tinhTrangLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            tinhTrangLabel.Location = new System.Drawing.Point(409, 132);
             tinhTrangLabel.Name = "tinhTrangLabel";
-            tinhTrangLabel.Size = new System.Drawing.Size(56, 17);
+            tinhTrangLabel.Size = new System.Drawing.Size(77, 26);
             tinhTrangLabel.TabIndex = 6;
             tinhTrangLabel.Text = "Đã xóa:";
-            // 
-            // maMonHocTextBox
-            // 
-            this.maMonHocTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "MaMonHoc", true));
-            this.maMonHocTextBox.Location = new System.Drawing.Point(331, 156);
-            this.maMonHocTextBox.Name = "maMonHocTextBox";
-            this.maMonHocTextBox.Size = new System.Drawing.Size(104, 22);
-            this.maMonHocTextBox.TabIndex = 1;
-            // 
-            // soTinhChiTextBox
-            // 
-            this.soTinhChiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "SoTinhChi", true));
-            this.soTinhChiTextBox.Location = new System.Drawing.Point(331, 184);
-            this.soTinhChiTextBox.Name = "soTinhChiTextBox";
-            this.soTinhChiTextBox.Size = new System.Drawing.Size(104, 22);
-            this.soTinhChiTextBox.TabIndex = 3;
-            // 
-            // tenMonHocTextBox
-            // 
-            this.tenMonHocTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource, "TenMonHoc", true));
-            this.tenMonHocTextBox.Location = new System.Drawing.Point(331, 212);
-            this.tenMonHocTextBox.Name = "tenMonHocTextBox";
-            this.tenMonHocTextBox.Size = new System.Drawing.Size(104, 22);
-            this.tenMonHocTextBox.TabIndex = 5;
             // 
             // tinhTrangCheckBox
             // 
             this.tinhTrangCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.bindingSource, "TinhTrang", true));
-            this.tinhTrangCheckBox.Location = new System.Drawing.Point(331, 240);
+            this.tinhTrangCheckBox.Location = new System.Drawing.Point(492, 137);
             this.tinhTrangCheckBox.Name = "tinhTrangCheckBox";
-            this.tinhTrangCheckBox.Size = new System.Drawing.Size(104, 24);
+            this.tinhTrangCheckBox.Size = new System.Drawing.Size(23, 24);
             this.tinhTrangCheckBox.TabIndex = 7;
-            this.tinhTrangCheckBox.Text = "checkBox1";
             this.tinhTrangCheckBox.UseVisualStyleBackColor = true;
             // 
             // update_button
             // 
-            this.update_button.Location = new System.Drawing.Point(481, 238);
+            this.update_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.update_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.update_button.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_button.ForeColor = System.Drawing.Color.White;
+            this.update_button.Location = new System.Drawing.Point(401, 215);
             this.update_button.Name = "update_button";
-            this.update_button.Size = new System.Drawing.Size(80, 24);
+            this.update_button.Size = new System.Drawing.Size(130, 30);
             this.update_button.TabIndex = 8;
             this.update_button.Text = "Cập nhật ";
-            this.update_button.UseVisualStyleBackColor = true;
+            this.update_button.UseVisualStyleBackColor = false;
             this.update_button.Click += new System.EventHandler(this.update_button_Click);
+            // 
+            // maMonHocTextBox
+            // 
+            this.maMonHocTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.maMonHocTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maMonHocTextBox.Location = new System.Drawing.Point(240, 93);
+            this.maMonHocTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.maMonHocTextBox.Name = "maMonHocTextBox";
+            this.maMonHocTextBox.Size = new System.Drawing.Size(291, 32);
+            this.maMonHocTextBox.TabIndex = 15;
+            // 
+            // soTinhChiTextBox
+            // 
+            this.soTinhChiTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.soTinhChiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soTinhChiTextBox.Location = new System.Drawing.Point(240, 129);
+            this.soTinhChiTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.soTinhChiTextBox.Name = "soTinhChiTextBox";
+            this.soTinhChiTextBox.Size = new System.Drawing.Size(158, 32);
+            this.soTinhChiTextBox.TabIndex = 15;
+            // 
+            // tenMonHocTextBox
+            // 
+            this.tenMonHocTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.tenMonHocTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenMonHocTextBox.Location = new System.Drawing.Point(240, 165);
+            this.tenMonHocTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tenMonHocTextBox.Name = "tenMonHocTextBox";
+            this.tenMonHocTextBox.Size = new System.Drawing.Size(291, 32);
+            this.tenMonHocTextBox.TabIndex = 15;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(680, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 16;
             // 
             // ViewMonHocForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.ClientSize = new System.Drawing.Size(725, 688);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ViewMonHocForm";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
             this.panel1.ResumeLayout(false);

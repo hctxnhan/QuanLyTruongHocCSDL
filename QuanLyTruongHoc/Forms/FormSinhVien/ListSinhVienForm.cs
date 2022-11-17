@@ -18,15 +18,7 @@ namespace QuanLyTruongHoc.Forms.FormSinhVien
     {
         private System.Windows.Forms.BindingSource sinhVienBindingSource;
         private BindingSource khoaBindingSource;
-        private TextBox diaChiTextBox;
-        private TextBox emailTextBox;
-        private TextBox gioiTinhTextBox;
-        private TextBox hoTextBox;
-        private TextBox maKhoaTextBox;
-        private TextBox maSVTextBox;
         private DateTimePicker ngaySinhDateTimePicker;
-        private TextBox tenTextBox;
-        private TextBox tinhTrangTextBox;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -36,6 +28,15 @@ namespace QuanLyTruongHoc.Forms.FormSinhVien
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private TextBox maSVTextBox;
+        private TextBox maKhoaTextBox;
+        private TextBox hoTextBox;
+        private TextBox gioiTinhTextBox;
+        private TextBox emailTextBox;
+        private TextBox diaChiTextBox;
+        private TextBox tinhTrangTextBox;
+        private TextBox tenTextBox;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.ComponentModel.IContainer components;
         public ListSinhVienForm() : base()
         {
@@ -64,15 +65,7 @@ namespace QuanLyTruongHoc.Forms.FormSinhVien
             System.Windows.Forms.Label tinhTrangLabel;
             this.sinhVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.khoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.diaChiTextBox = new System.Windows.Forms.TextBox();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.gioiTinhTextBox = new System.Windows.Forms.TextBox();
-            this.hoTextBox = new System.Windows.Forms.TextBox();
-            this.maKhoaTextBox = new System.Windows.Forms.TextBox();
-            this.maSVTextBox = new System.Windows.Forms.TextBox();
             this.ngaySinhDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.tenTextBox = new System.Windows.Forms.TextBox();
-            this.tinhTrangTextBox = new System.Windows.Forms.TextBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,6 +75,15 @@ namespace QuanLyTruongHoc.Forms.FormSinhVien
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.gioiTinhTextBox = new System.Windows.Forms.TextBox();
+            this.hoTextBox = new System.Windows.Forms.TextBox();
+            this.maKhoaTextBox = new System.Windows.Forms.TextBox();
+            this.maSVTextBox = new System.Windows.Forms.TextBox();
+            this.tenTextBox = new System.Windows.Forms.TextBox();
+            this.tinhTrangTextBox = new System.Windows.Forms.TextBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             diaChiLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
             gioiTinhLabel = new System.Windows.Forms.Label();
@@ -96,137 +98,177 @@ namespace QuanLyTruongHoc.Forms.FormSinhVien
             ((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(diaChiLabel);
-            this.panel1.Controls.Add(this.diaChiTextBox);
-            this.panel1.Controls.Add(emailLabel);
-            this.panel1.Controls.Add(this.emailTextBox);
-            this.panel1.Controls.Add(gioiTinhLabel);
-            this.panel1.Controls.Add(this.gioiTinhTextBox);
-            this.panel1.Controls.Add(hoLabel);
-            this.panel1.Controls.Add(this.hoTextBox);
-            this.panel1.Controls.Add(maKhoaLabel);
-            this.panel1.Controls.Add(this.maKhoaTextBox);
-            this.panel1.Controls.Add(maSVLabel);
-            this.panel1.Controls.Add(this.maSVTextBox);
-            this.panel1.Controls.Add(ngaySinhLabel);
-            this.panel1.Controls.Add(this.ngaySinhDateTimePicker);
-            this.panel1.Controls.Add(tenLabel);
-            this.panel1.Controls.Add(this.tenTextBox);
-            this.panel1.Controls.Add(tinhTrangLabel);
-            this.panel1.Controls.Add(this.tinhTrangTextBox);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Size = new System.Drawing.Size(865, 340);
-            this.panel1.Controls.SetChildIndex(this.search_btn, 0);
-            this.panel1.Controls.SetChildIndex(this.add_btn, 0);
-            this.panel1.Controls.SetChildIndex(this.tinhTrangTextBox, 0);
-            this.panel1.Controls.SetChildIndex(tinhTrangLabel, 0);
-            this.panel1.Controls.SetChildIndex(this.tenTextBox, 0);
-            this.panel1.Controls.SetChildIndex(tenLabel, 0);
-            this.panel1.Controls.SetChildIndex(this.ngaySinhDateTimePicker, 0);
-            this.panel1.Controls.SetChildIndex(ngaySinhLabel, 0);
-            this.panel1.Controls.SetChildIndex(this.maSVTextBox, 0);
-            this.panel1.Controls.SetChildIndex(maSVLabel, 0);
-            this.panel1.Controls.SetChildIndex(this.maKhoaTextBox, 0);
-            this.panel1.Controls.SetChildIndex(maKhoaLabel, 0);
-            this.panel1.Controls.SetChildIndex(this.hoTextBox, 0);
-            this.panel1.Controls.SetChildIndex(hoLabel, 0);
-            this.panel1.Controls.SetChildIndex(this.gioiTinhTextBox, 0);
-            this.panel1.Controls.SetChildIndex(gioiTinhLabel, 0);
-            this.panel1.Controls.SetChildIndex(this.emailTextBox, 0);
-            this.panel1.Controls.SetChildIndex(emailLabel, 0);
-            this.panel1.Controls.SetChildIndex(this.diaChiTextBox, 0);
-            this.panel1.Controls.SetChildIndex(diaChiLabel, 0);
-            // 
             // search_btn
             // 
-            this.search_btn.Location = new System.Drawing.Point(237, 288);
-            //this.search_btn.Click += new System.EventHandler(this.search_btn_Click_1);
+            this.search_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.search_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_btn.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_btn.ForeColor = System.Drawing.Color.White;
+            this.search_btn.Location = new System.Drawing.Point(618, 266);
+            this.search_btn.Size = new System.Drawing.Size(125, 30);
+            this.search_btn.UseVisualStyleBackColor = false;
             // 
             // add_btn
             // 
-            this.add_btn.Location = new System.Drawing.Point(146, 288);
-            this.add_btn.Size = new System.Drawing.Size(75, 27);
+            this.add_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.add_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_btn.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_btn.ForeColor = System.Drawing.Color.White;
+            this.add_btn.Location = new System.Drawing.Point(618, 230);
+            this.add_btn.Size = new System.Drawing.Size(125, 30);
+            this.add_btn.UseVisualStyleBackColor = false;
+            // 
+            // refresh
+            // 
+            this.refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refresh.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh.ForeColor = System.Drawing.Color.White;
+            this.refresh.Location = new System.Drawing.Point(618, 303);
+            this.refresh.Size = new System.Drawing.Size(125, 30);
+            this.refresh.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.tinhTrangTextBox);
+            this.panel1.Controls.Add(this.tenTextBox);
+            this.panel1.Controls.Add(this.maSVTextBox);
+            this.panel1.Controls.Add(this.maKhoaTextBox);
+            this.panel1.Controls.Add(this.hoTextBox);
+            this.panel1.Controls.Add(this.gioiTinhTextBox);
+            this.panel1.Controls.Add(this.emailTextBox);
+            this.panel1.Controls.Add(this.diaChiTextBox);
+            this.panel1.Controls.Add(diaChiLabel);
+            this.panel1.Controls.Add(emailLabel);
+            this.panel1.Controls.Add(gioiTinhLabel);
+            this.panel1.Controls.Add(hoLabel);
+            this.panel1.Controls.Add(maKhoaLabel);
+            this.panel1.Controls.Add(maSVLabel);
+            this.panel1.Controls.Add(ngaySinhLabel);
+            this.panel1.Controls.Add(this.ngaySinhDateTimePicker);
+            this.panel1.Controls.Add(tenLabel);
+            this.panel1.Controls.Add(tinhTrangLabel);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Size = new System.Drawing.Size(865, 357);
+            this.panel1.Controls.SetChildIndex(tinhTrangLabel, 0);
+            this.panel1.Controls.SetChildIndex(tenLabel, 0);
+            this.panel1.Controls.SetChildIndex(this.ngaySinhDateTimePicker, 0);
+            this.panel1.Controls.SetChildIndex(ngaySinhLabel, 0);
+            this.panel1.Controls.SetChildIndex(maSVLabel, 0);
+            this.panel1.Controls.SetChildIndex(maKhoaLabel, 0);
+            this.panel1.Controls.SetChildIndex(hoLabel, 0);
+            this.panel1.Controls.SetChildIndex(gioiTinhLabel, 0);
+            this.panel1.Controls.SetChildIndex(emailLabel, 0);
+            this.panel1.Controls.SetChildIndex(diaChiLabel, 0);
+            this.panel1.Controls.SetChildIndex(this.diaChiTextBox, 0);
+            this.panel1.Controls.SetChildIndex(this.emailTextBox, 0);
+            this.panel1.Controls.SetChildIndex(this.gioiTinhTextBox, 0);
+            this.panel1.Controls.SetChildIndex(this.hoTextBox, 0);
+            this.panel1.Controls.SetChildIndex(this.maKhoaTextBox, 0);
+            this.panel1.Controls.SetChildIndex(this.maSVTextBox, 0);
+            this.panel1.Controls.SetChildIndex(this.tenTextBox, 0);
+            this.panel1.Controls.SetChildIndex(this.tinhTrangTextBox, 0);
+            this.panel1.Controls.SetChildIndex(this.refresh, 0);
+            this.panel1.Controls.SetChildIndex(this.search_btn, 0);
+            this.panel1.Controls.SetChildIndex(this.add_btn, 0);
             // 
             // diaChiLabel
             // 
             diaChiLabel.AutoSize = true;
-            diaChiLabel.Location = new System.Drawing.Point(22, 39);
+            diaChiLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            diaChiLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            diaChiLabel.Location = new System.Drawing.Point(217, 23);
             diaChiLabel.Name = "diaChiLabel";
-            diaChiLabel.Size = new System.Drawing.Size(55, 17);
+            diaChiLabel.Size = new System.Drawing.Size(79, 26);
             diaChiLabel.TabIndex = 2;
             diaChiLabel.Text = "Địa chỉ:";
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(22, 67);
+            emailLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            emailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            emailLabel.Location = new System.Drawing.Point(227, 59);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(46, 17);
+            emailLabel.Size = new System.Drawing.Size(69, 26);
             emailLabel.TabIndex = 4;
             emailLabel.Text = "Email:";
             // 
             // gioiTinhLabel
             // 
             gioiTinhLabel.AutoSize = true;
-            gioiTinhLabel.Location = new System.Drawing.Point(22, 95);
+            gioiTinhLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            gioiTinhLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            gioiTinhLabel.Location = new System.Drawing.Point(203, 95);
             gioiTinhLabel.Name = "gioiTinhLabel";
-            gioiTinhLabel.Size = new System.Drawing.Size(64, 17);
+            gioiTinhLabel.Size = new System.Drawing.Size(93, 26);
             gioiTinhLabel.TabIndex = 6;
             gioiTinhLabel.Text = "Giới tính:";
             // 
             // hoLabel
             // 
             hoLabel.AutoSize = true;
-            hoLabel.Location = new System.Drawing.Point(22, 123);
+            hoLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            hoLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            hoLabel.Location = new System.Drawing.Point(243, 131);
             hoLabel.Name = "hoLabel";
-            hoLabel.Size = new System.Drawing.Size(30, 17);
+            hoLabel.Size = new System.Drawing.Size(41, 26);
             hoLabel.TabIndex = 8;
             hoLabel.Text = "Họ:";
             // 
             // maKhoaLabel
             // 
             maKhoaLabel.AutoSize = true;
-            maKhoaLabel.Location = new System.Drawing.Point(22, 151);
+            maKhoaLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            maKhoaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            maKhoaLabel.Location = new System.Drawing.Point(201, 168);
             maKhoaLabel.Name = "maKhoaLabel";
-            maKhoaLabel.Size = new System.Drawing.Size(66, 17);
+            maKhoaLabel.Size = new System.Drawing.Size(95, 26);
             maKhoaLabel.TabIndex = 10;
             maKhoaLabel.Text = "Mã khoa:";
             // 
             // maSVLabel
             // 
             maSVLabel.AutoSize = true;
-            maSVLabel.Location = new System.Drawing.Point(22, 179);
+            maSVLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            maSVLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            maSVLabel.Location = new System.Drawing.Point(163, 202);
             maSVLabel.Name = "maSVLabel";
-            maSVLabel.Size = new System.Drawing.Size(91, 17);
+            maSVLabel.Size = new System.Drawing.Size(133, 26);
             maSVLabel.TabIndex = 12;
             maSVLabel.Text = "Mã sinh viên:";
             // 
             // ngaySinhLabel
             // 
             ngaySinhLabel.AutoSize = true;
-            ngaySinhLabel.Location = new System.Drawing.Point(22, 208);
+            ngaySinhLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ngaySinhLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            ngaySinhLabel.Location = new System.Drawing.Point(188, 234);
             ngaySinhLabel.Name = "ngaySinhLabel";
-            ngaySinhLabel.Size = new System.Drawing.Size(75, 17);
+            ngaySinhLabel.Size = new System.Drawing.Size(108, 26);
             ngaySinhLabel.TabIndex = 14;
             ngaySinhLabel.Text = "Ngày sinh:";
             // 
             // tenLabel
             // 
             tenLabel.AutoSize = true;
-            tenLabel.Location = new System.Drawing.Point(22, 235);
+            tenLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tenLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            tenLabel.Location = new System.Drawing.Point(246, 268);
             tenLabel.Name = "tenLabel";
-            tenLabel.Size = new System.Drawing.Size(37, 17);
+            tenLabel.Size = new System.Drawing.Size(50, 26);
             tenLabel.TabIndex = 16;
             tenLabel.Text = "Tên:";
             // 
             // tinhTrangLabel
             // 
             tinhTrangLabel.AutoSize = true;
-            tinhTrangLabel.Location = new System.Drawing.Point(22, 263);
+            tinhTrangLabel.Font = new System.Drawing.Font("Roboto Slab", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tinhTrangLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            tinhTrangLabel.Location = new System.Drawing.Point(183, 303);
             tinhTrangLabel.Name = "tinhTrangLabel";
-            tinhTrangLabel.Size = new System.Drawing.Size(77, 17);
+            tinhTrangLabel.Size = new System.Drawing.Size(113, 26);
             tinhTrangLabel.TabIndex = 18;
             tinhTrangLabel.Text = "Tình trạng:";
             // 
@@ -238,77 +280,13 @@ namespace QuanLyTruongHoc.Forms.FormSinhVien
             // 
             this.khoaBindingSource.DataSource = typeof(QuanLyTruongHoc.DataObjects.Khoa);
             // 
-            // diaChiTextBox
-            // 
-            this.diaChiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sinhVienBindingSource, "DiaChi", true));
-            this.diaChiTextBox.Location = new System.Drawing.Point(112, 36);
-            this.diaChiTextBox.Name = "diaChiTextBox";
-            this.diaChiTextBox.Size = new System.Drawing.Size(200, 22);
-            this.diaChiTextBox.TabIndex = 3;
-            // 
-            // emailTextBox
-            // 
-            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sinhVienBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(112, 64);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(200, 22);
-            this.emailTextBox.TabIndex = 5;
-            // 
-            // gioiTinhTextBox
-            // 
-            this.gioiTinhTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sinhVienBindingSource, "GioiTinh", true));
-            this.gioiTinhTextBox.Location = new System.Drawing.Point(112, 92);
-            this.gioiTinhTextBox.Name = "gioiTinhTextBox";
-            this.gioiTinhTextBox.Size = new System.Drawing.Size(200, 22);
-            this.gioiTinhTextBox.TabIndex = 7;
-            // 
-            // hoTextBox
-            // 
-            this.hoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sinhVienBindingSource, "Ho", true));
-            this.hoTextBox.Location = new System.Drawing.Point(112, 120);
-            this.hoTextBox.Name = "hoTextBox";
-            this.hoTextBox.Size = new System.Drawing.Size(200, 22);
-            this.hoTextBox.TabIndex = 9;
-            // 
-            // maKhoaTextBox
-            // 
-            this.maKhoaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sinhVienBindingSource, "MaKhoa", true));
-            this.maKhoaTextBox.Location = new System.Drawing.Point(112, 148);
-            this.maKhoaTextBox.Name = "maKhoaTextBox";
-            this.maKhoaTextBox.Size = new System.Drawing.Size(200, 22);
-            this.maKhoaTextBox.TabIndex = 11;
-            // 
-            // maSVTextBox
-            // 
-            this.maSVTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sinhVienBindingSource, "MaSV", true));
-            this.maSVTextBox.Location = new System.Drawing.Point(112, 176);
-            this.maSVTextBox.Name = "maSVTextBox";
-            this.maSVTextBox.Size = new System.Drawing.Size(200, 22);
-            this.maSVTextBox.TabIndex = 13;
-            // 
             // ngaySinhDateTimePicker
             // 
             this.ngaySinhDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.sinhVienBindingSource, "NgaySinh", true));
-            this.ngaySinhDateTimePicker.Location = new System.Drawing.Point(112, 204);
+            this.ngaySinhDateTimePicker.Location = new System.Drawing.Point(302, 237);
             this.ngaySinhDateTimePicker.Name = "ngaySinhDateTimePicker";
-            this.ngaySinhDateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.ngaySinhDateTimePicker.Size = new System.Drawing.Size(290, 22);
             this.ngaySinhDateTimePicker.TabIndex = 15;
-            // 
-            // tenTextBox
-            // 
-            this.tenTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sinhVienBindingSource, "Ten", true));
-            this.tenTextBox.Location = new System.Drawing.Point(112, 232);
-            this.tenTextBox.Name = "tenTextBox";
-            this.tenTextBox.Size = new System.Drawing.Size(200, 22);
-            this.tenTextBox.TabIndex = 17;
-            // 
-            // tinhTrangTextBox
-            // 
-            this.tinhTrangTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sinhVienBindingSource, "TinhTrang", true));
-            this.tinhTrangTextBox.Location = new System.Drawing.Point(112, 260);
-            this.tinhTrangTextBox.Name = "tinhTrangTextBox";
-            this.tinhTrangTextBox.Size = new System.Drawing.Size(200, 22);
-            this.tinhTrangTextBox.TabIndex = 19;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -382,14 +360,110 @@ namespace QuanLyTruongHoc.Forms.FormSinhVien
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.Width = 125;
             // 
+            // diaChiTextBox
+            // 
+            this.diaChiTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.diaChiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diaChiTextBox.Location = new System.Drawing.Point(302, 20);
+            this.diaChiTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.diaChiTextBox.Name = "diaChiTextBox";
+            this.diaChiTextBox.Size = new System.Drawing.Size(290, 32);
+            this.diaChiTextBox.TabIndex = 31;
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.emailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTextBox.Location = new System.Drawing.Point(302, 56);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(290, 32);
+            this.emailTextBox.TabIndex = 31;
+            // 
+            // gioiTinhTextBox
+            // 
+            this.gioiTinhTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.gioiTinhTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gioiTinhTextBox.Location = new System.Drawing.Point(302, 92);
+            this.gioiTinhTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gioiTinhTextBox.Name = "gioiTinhTextBox";
+            this.gioiTinhTextBox.Size = new System.Drawing.Size(290, 32);
+            this.gioiTinhTextBox.TabIndex = 31;
+            // 
+            // hoTextBox
+            // 
+            this.hoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.hoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoTextBox.Location = new System.Drawing.Point(302, 128);
+            this.hoTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.hoTextBox.Name = "hoTextBox";
+            this.hoTextBox.Size = new System.Drawing.Size(290, 32);
+            this.hoTextBox.TabIndex = 31;
+            // 
+            // maKhoaTextBox
+            // 
+            this.maKhoaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.maKhoaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maKhoaTextBox.Location = new System.Drawing.Point(302, 164);
+            this.maKhoaTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.maKhoaTextBox.Name = "maKhoaTextBox";
+            this.maKhoaTextBox.Size = new System.Drawing.Size(290, 32);
+            this.maKhoaTextBox.TabIndex = 31;
+            // 
+            // maSVTextBox
+            // 
+            this.maSVTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.maSVTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maSVTextBox.Location = new System.Drawing.Point(302, 200);
+            this.maSVTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.maSVTextBox.Name = "maSVTextBox";
+            this.maSVTextBox.Size = new System.Drawing.Size(290, 32);
+            this.maSVTextBox.TabIndex = 31;
+            // 
+            // tenTextBox
+            // 
+            this.tenTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.tenTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenTextBox.Location = new System.Drawing.Point(302, 264);
+            this.tenTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tenTextBox.Name = "tenTextBox";
+            this.tenTextBox.Size = new System.Drawing.Size(290, 32);
+            this.tenTextBox.TabIndex = 31;
+            // 
+            // tinhTrangTextBox
+            // 
+            this.tinhTrangTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
+            this.tinhTrangTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tinhTrangTextBox.Location = new System.Drawing.Point(302, 300);
+            this.tinhTrangTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tinhTrangTextBox.Name = "tinhTrangTextBox";
+            this.tinhTrangTextBox.Size = new System.Drawing.Size(290, 32);
+            this.tinhTrangTextBox.TabIndex = 31;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(823, -2);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 4;
+            // 
             // ListSinhVienForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(865, 450);
+            this.Controls.Add(this.guna2ControlBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ListSinhVienForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.guna2ControlBox1, 0);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sinhVienBindingSource)).EndInit();

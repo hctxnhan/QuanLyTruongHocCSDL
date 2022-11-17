@@ -41,14 +41,42 @@ namespace QuanLyTruongHoc.Forms.FormChucNangGV
             // 
             // search_btn
             // 
-            this.search_btn.Location = new System.Drawing.Point(776, 213);
-            this.search_btn.Size = new System.Drawing.Size(97, 42);
+            this.search_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(174)))), ((int)(((byte)(51)))));
+            this.search_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_btn.Font = new System.Drawing.Font("Roboto Slab Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_btn.ForeColor = System.Drawing.Color.White;
+            this.search_btn.Location = new System.Drawing.Point(676, 177);
+            this.search_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.search_btn.Size = new System.Drawing.Size(112, 43);
+            this.search_btn.Text = " Tìm kiếm";
+            this.search_btn.UseVisualStyleBackColor = false;
             // 
             // add_btn
             // 
-            this.add_btn.Location = new System.Drawing.Point(606, 213);
-            this.add_btn.Size = new System.Drawing.Size(131, 42);
+            this.add_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.add_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_btn.Font = new System.Drawing.Font("Roboto Slab Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_btn.ForeColor = System.Drawing.Color.White;
+            this.add_btn.Location = new System.Drawing.Point(558, 178);
+            this.add_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.add_btn.Size = new System.Drawing.Size(112, 43);
             this.add_btn.Text = "Kết thúc lớp";
+            this.add_btn.UseVisualStyleBackColor = false;
+            // 
+            // refresh
+            // 
+            this.refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refresh.Font = new System.Drawing.Font("Roboto Slab Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh.ForeColor = System.Drawing.Color.White;
+            this.refresh.Location = new System.Drawing.Point(440, 178);
+            this.refresh.Size = new System.Drawing.Size(112, 42);
+            this.refresh.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Font = new System.Drawing.Font("Roboto Slab", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(0, 30);
             // 
             // thongTinLopHocBindingSource
             // 
@@ -56,9 +84,13 @@ namespace QuanLyTruongHoc.Forms.FormChucNangGV
             // 
             // ListDanhSachLop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ListDanhSachLop";
+            this.Controls.SetChildIndex(this.panel1, 0);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.thongTinLopHocBindingSource)).EndInit();
             this.ResumeLayout(false);

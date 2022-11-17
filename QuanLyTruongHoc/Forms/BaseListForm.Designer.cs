@@ -41,6 +41,7 @@ namespace QuanLyTruongHoc.Forms
             this.xemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sửaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -73,6 +74,7 @@ namespace QuanLyTruongHoc.Forms
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.refresh);
             this.panel1.Controls.Add(this.add_btn);
             this.panel1.Controls.Add(this.search_btn);
@@ -84,32 +86,44 @@ namespace QuanLyTruongHoc.Forms
             // 
             // refresh
             // 
-            this.refresh.Location = new System.Drawing.Point(32, 163);
+            this.refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refresh.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh.ForeColor = System.Drawing.Color.White;
+            this.refresh.Location = new System.Drawing.Point(386, 188);
             this.refresh.Name = "refresh";
-            this.refresh.Size = new System.Drawing.Size(75, 33);
+            this.refresh.Size = new System.Drawing.Size(130, 28);
             this.refresh.TabIndex = 2;
             this.refresh.Text = "Refresh";
-            this.refresh.UseVisualStyleBackColor = true;
+            this.refresh.UseVisualStyleBackColor = false;
             this.refresh.Click += new System.EventHandler(this.refresh_Click);
             // 
             // add_btn
             // 
-            this.add_btn.Location = new System.Drawing.Point(605, 170);
+            this.add_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.add_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_btn.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_btn.ForeColor = System.Drawing.Color.White;
+            this.add_btn.Location = new System.Drawing.Point(522, 188);
             this.add_btn.Name = "add_btn";
-            this.add_btn.Size = new System.Drawing.Size(75, 33);
+            this.add_btn.Size = new System.Drawing.Size(130, 28);
             this.add_btn.TabIndex = 1;
             this.add_btn.Text = "Thêm";
-            this.add_btn.UseVisualStyleBackColor = true;
+            this.add_btn.UseVisualStyleBackColor = false;
             this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
             // 
             // search_btn
             // 
-            this.search_btn.Location = new System.Drawing.Point(686, 163);
+            this.search_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.search_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_btn.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_btn.ForeColor = System.Drawing.Color.White;
+            this.search_btn.Location = new System.Drawing.Point(658, 188);
             this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(90, 46);
+            this.search_btn.Size = new System.Drawing.Size(130, 28);
             this.search_btn.TabIndex = 0;
             this.search_btn.Text = "Tìm kiếm";
-            this.search_btn.UseVisualStyleBackColor = true;
+            this.search_btn.UseVisualStyleBackColor = false;
             this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
             // 
             // dataGridView
@@ -161,14 +175,28 @@ namespace QuanLyTruongHoc.Forms
             this.xóaToolStripMenuItem.Text = "Xóa";
             this.xóaToolStripMenuItem.Click += new System.EventHandler(this.xóaToolStripMenuItem_Click);
             // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(755, -1);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 3;
+            // 
             // BaseListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "BaseListForm";
             this.Text = "BaseListForm";
@@ -196,5 +224,6 @@ namespace QuanLyTruongHoc.Forms
         protected System.Windows.Forms.Button refresh;
         protected System.Windows.Forms.DataGridView dataGridView;
         public System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

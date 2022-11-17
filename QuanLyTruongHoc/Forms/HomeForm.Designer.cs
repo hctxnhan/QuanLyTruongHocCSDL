@@ -28,136 +28,135 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button_lophoc = new System.Windows.Forms.Button();
             this.button_sv = new System.Windows.Forms.Button();
             this.button_diem = new System.Windows.Forms.Button();
             this.button_gv = new System.Windows.Forms.Button();
             this.button_kyhoc = new System.Windows.Forms.Button();
-            this.button_monhoc = new System.Windows.Forms.Button();
             this.button_khoa = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.button_monhoc = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.button_lophoc);
-            this.flowLayoutPanel1.Controls.Add(this.button_sv);
-            this.flowLayoutPanel1.Controls.Add(this.button_diem);
-            this.flowLayoutPanel1.Controls.Add(this.button_gv);
-            this.flowLayoutPanel1.Controls.Add(this.button_kyhoc);
-            this.flowLayoutPanel1.Controls.Add(this.button_monhoc);
-            this.flowLayoutPanel1.Controls.Add(this.button_khoa);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(722, 351);
-            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // button_lophoc
             // 
-            this.button_lophoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_lophoc.Location = new System.Drawing.Point(3, 4);
-            this.button_lophoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button_lophoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.button_lophoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_lophoc.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_lophoc.ForeColor = System.Drawing.Color.White;
+            this.button_lophoc.Location = new System.Drawing.Point(85, 252);
             this.button_lophoc.Name = "button_lophoc";
-            this.button_lophoc.Size = new System.Drawing.Size(233, 109);
-            this.button_lophoc.TabIndex = 0;
+            this.button_lophoc.Size = new System.Drawing.Size(425, 45);
+            this.button_lophoc.TabIndex = 7;
             this.button_lophoc.Text = "Lớp học";
-            this.button_lophoc.UseVisualStyleBackColor = true;
-            this.button_lophoc.Click += new System.EventHandler(this.button_lophoc_Click);
+            this.button_lophoc.UseVisualStyleBackColor = false;
             // 
             // button_sv
             // 
-            this.button_sv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_sv.Location = new System.Drawing.Point(242, 4);
-            this.button_sv.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button_sv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.button_sv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_sv.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_sv.ForeColor = System.Drawing.Color.White;
+            this.button_sv.Location = new System.Drawing.Point(85, 99);
             this.button_sv.Name = "button_sv";
-            this.button_sv.Size = new System.Drawing.Size(233, 109);
-            this.button_sv.TabIndex = 1;
+            this.button_sv.Size = new System.Drawing.Size(425, 45);
+            this.button_sv.TabIndex = 8;
             this.button_sv.Text = "Sinh Viên";
-            this.button_sv.UseVisualStyleBackColor = true;
+            this.button_sv.UseVisualStyleBackColor = false;
             // 
             // button_diem
             // 
-            this.button_diem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_diem.Location = new System.Drawing.Point(481, 4);
-            this.button_diem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button_diem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.button_diem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_diem.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_diem.ForeColor = System.Drawing.Color.White;
+            this.button_diem.Location = new System.Drawing.Point(85, 354);
             this.button_diem.Name = "button_diem";
-            this.button_diem.Size = new System.Drawing.Size(233, 109);
-            this.button_diem.TabIndex = 2;
+            this.button_diem.Size = new System.Drawing.Size(425, 45);
+            this.button_diem.TabIndex = 9;
             this.button_diem.Text = "Bảng điểm";
-            this.button_diem.UseVisualStyleBackColor = true;
+            this.button_diem.UseVisualStyleBackColor = false;
             // 
             // button_gv
             // 
-            this.button_gv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_gv.Location = new System.Drawing.Point(3, 121);
-            this.button_gv.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button_gv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.button_gv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_gv.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_gv.ForeColor = System.Drawing.Color.White;
+            this.button_gv.Location = new System.Drawing.Point(85, 48);
             this.button_gv.Name = "button_gv";
-            this.button_gv.Size = new System.Drawing.Size(233, 109);
-            this.button_gv.TabIndex = 3;
+            this.button_gv.Size = new System.Drawing.Size(425, 45);
+            this.button_gv.TabIndex = 10;
             this.button_gv.Text = "Giảng viên";
-            this.button_gv.UseVisualStyleBackColor = true;
-            this.button_gv.Click += new System.EventHandler(this.button_gv_Click);
+            this.button_gv.UseVisualStyleBackColor = false;
             // 
             // button_kyhoc
             // 
-            this.button_kyhoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_kyhoc.Location = new System.Drawing.Point(242, 121);
-            this.button_kyhoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button_kyhoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.button_kyhoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_kyhoc.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_kyhoc.ForeColor = System.Drawing.Color.White;
+            this.button_kyhoc.Location = new System.Drawing.Point(85, 150);
             this.button_kyhoc.Name = "button_kyhoc";
-            this.button_kyhoc.Size = new System.Drawing.Size(233, 109);
-            this.button_kyhoc.TabIndex = 4;
+            this.button_kyhoc.Size = new System.Drawing.Size(425, 45);
+            this.button_kyhoc.TabIndex = 11;
             this.button_kyhoc.Text = "Kỳ học";
-            this.button_kyhoc.UseVisualStyleBackColor = true;
-            // 
-            // button_monhoc
-            // 
-            this.button_monhoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_monhoc.Location = new System.Drawing.Point(481, 121);
-            this.button_monhoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button_monhoc.Name = "button_monhoc";
-            this.button_monhoc.Size = new System.Drawing.Size(233, 109);
-            this.button_monhoc.TabIndex = 5;
-            this.button_monhoc.Text = "Môn học";
-            this.button_monhoc.UseVisualStyleBackColor = true;
+            this.button_kyhoc.UseVisualStyleBackColor = false;
             // 
             // button_khoa
             // 
-            this.button_khoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_khoa.Location = new System.Drawing.Point(3, 238);
-            this.button_khoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button_khoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.button_khoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_khoa.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_khoa.ForeColor = System.Drawing.Color.White;
+            this.button_khoa.Location = new System.Drawing.Point(85, 201);
             this.button_khoa.Name = "button_khoa";
-            this.button_khoa.Size = new System.Drawing.Size(233, 109);
-            this.button_khoa.TabIndex = 6;
+            this.button_khoa.Size = new System.Drawing.Size(425, 45);
+            this.button_khoa.TabIndex = 13;
             this.button_khoa.Text = "Khoa";
-            this.button_khoa.UseVisualStyleBackColor = true;
+            this.button_khoa.UseVisualStyleBackColor = false;
+            // 
+            // button_monhoc
+            // 
+            this.button_monhoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(126)))), ((int)(((byte)(75)))));
+            this.button_monhoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_monhoc.Font = new System.Drawing.Font("Roboto Slab Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_monhoc.ForeColor = System.Drawing.Color.White;
+            this.button_monhoc.Location = new System.Drawing.Point(85, 303);
+            this.button_monhoc.Name = "button_monhoc";
+            this.button_monhoc.Size = new System.Drawing.Size(425, 45);
+            this.button_monhoc.TabIndex = 12;
+            this.button_monhoc.Text = "Môn học";
+            this.button_monhoc.UseVisualStyleBackColor = false;
             // 
             // HomeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(722, 351);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(601, 446);
+            this.Controls.Add(this.button_lophoc);
+            this.Controls.Add(this.button_sv);
+            this.Controls.Add(this.button_diem);
+            this.Controls.Add(this.button_gv);
+            this.Controls.Add(this.button_kyhoc);
+            this.Controls.Add(this.button_khoa);
+            this.Controls.Add(this.button_monhoc);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HomeForm";
             this.Text = "HomeForm";
             this.Load += new System.EventHandler(this.HomeForm_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button button_lophoc;
         private System.Windows.Forms.Button button_sv;
         private System.Windows.Forms.Button button_diem;
         private System.Windows.Forms.Button button_gv;
         private System.Windows.Forms.Button button_kyhoc;
-        private System.Windows.Forms.Button button_monhoc;
         private System.Windows.Forms.Button button_khoa;
+        private System.Windows.Forms.Button button_monhoc;
     }
 }

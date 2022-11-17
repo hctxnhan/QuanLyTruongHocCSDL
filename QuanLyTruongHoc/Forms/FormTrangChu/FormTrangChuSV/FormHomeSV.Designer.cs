@@ -28,75 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.monDaDk = new System.Windows.Forms.Button();
-            this.dangky = new System.Windows.Forms.Button();
-            this.thongtincanhan = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // guna2ControlBox1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.monDaDk);
-            this.flowLayoutPanel1.Controls.Add(this.dangky);
-            this.flowLayoutPanel1.Controls.Add(this.thongtincanhan);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(800, 450);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // monDaDk
-            // 
-            this.monDaDk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monDaDk.Location = new System.Drawing.Point(3, 3);
-            this.monDaDk.Name = "monDaDk";
-            this.monDaDk.Size = new System.Drawing.Size(251, 83);
-            this.monDaDk.TabIndex = 0;
-            this.monDaDk.Text = "Danh sách lớp học đã đăng ký";
-            this.monDaDk.UseVisualStyleBackColor = true;
-            this.monDaDk.Click += new System.EventHandler(this.monDaDk_Click);
-            // 
-            // dangky
-            // 
-            this.dangky.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dangky.Location = new System.Drawing.Point(260, 3);
-            this.dangky.Name = "dangky";
-            this.dangky.Size = new System.Drawing.Size(251, 83);
-            this.dangky.TabIndex = 1;
-            this.dangky.Text = "Đăng ký lớp học";
-            this.dangky.UseVisualStyleBackColor = true;
-            this.dangky.Click += new System.EventHandler(this.dangky_Click);
-            // 
-            // thongtincanhan
-            // 
-            this.thongtincanhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thongtincanhan.Location = new System.Drawing.Point(517, 3);
-            this.thongtincanhan.Name = "thongtincanhan";
-            this.thongtincanhan.Size = new System.Drawing.Size(251, 83);
-            this.thongtincanhan.TabIndex = 2;
-            this.thongtincanhan.Text = "Thông tin cá nhân";
-            this.thongtincanhan.UseVisualStyleBackColor = true;
-            this.thongtincanhan.Click += new System.EventHandler(this.thongtincanhan_Click);
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(756, -1);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 0;
             // 
             // FormHomeSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.guna2ControlBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormHomeSV";
             this.Text = "FormHomeSV";
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button monDaDk;
-        private System.Windows.Forms.Button dangky;
-        private System.Windows.Forms.Button thongtincanhan;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }
